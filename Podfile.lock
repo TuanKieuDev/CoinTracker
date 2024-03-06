@@ -1,0 +1,95 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Differentiator (4.0.1)
+  - MBProgressHUD (1.2.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - ObjectMapper (4.2.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - RxSwiftUtilities (2.2.0):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - SwiftLint (0.46.5)
+  - Then (2.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.1)
+  - MBProgressHUD (~> 1.2.0)
+  - "NSObject+Rx (~> 5.1.0)"
+  - ObjectMapper (~> 4.2.0)
+  - Reusable (~> 4.1.1)
+  - RxAlamofire (~> 5.7.1)
+  - RxCocoa (~> 5.1.1)
+  - RxDataSources (~> 4.0.1)
+  - RxGesture
+  - RxSwift (~> 5.1.1)
+  - RxSwiftUtilities (~> 2.2.0)
+  - SDWebImage (~> 5.8.4)
+  - SwiftLint (~> 0.46.0)
+  - Then (~> 2.7.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - MBProgressHUD
+    - "NSObject+Rx"
+    - ObjectMapper
+    - Reusable
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - RxSwiftUtilities
+    - SDWebImage
+    - SwiftLint
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  RxSwiftUtilities: 59e2d82daf74b9962f732b09e6da85a26281cfc0
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+
+PODFILE CHECKSUM: e88e02186907f52b4dc6ef980655d18bbab3d236
+
+COCOAPODS: 1.15.2
