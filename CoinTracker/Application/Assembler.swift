@@ -6,6 +6,7 @@
 //
 
 protocol Assembler: AnyObject,
+                    GatewaysAssembler,
                     AppAssembler,
                     MainAssembler,
                     HomeAssembler {
