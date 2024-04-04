@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (5.4.4)
+  - AppCenter/Analytics (5.0.4):
+    - AppCenter/Core
+  - AppCenter/Core (5.0.4)
+  - AppCenter/Crashes (5.0.4):
+    - AppCenter/Core
   - Differentiator (4.0.1)
   - MBProgressHUD (1.2.0)
   - "NSObject+Rx (5.1.0)":
@@ -39,6 +44,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.4.1)
+  - AppCenter/Analytics
+  - AppCenter/Crashes
   - MBProgressHUD (~> 1.2.0)
   - "NSObject+Rx (~> 5.1.0)"
   - ObjectMapper (~> 4.2.0)
@@ -56,6 +63,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppCenter
     - Differentiator
     - MBProgressHUD
     - "NSObject+Rx"
@@ -74,6 +82,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
@@ -90,6 +99,6 @@ SPEC CHECKSUMS:
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: e88e02186907f52b4dc6ef980655d18bbab3d236
+PODFILE CHECKSUM: 374a8d50974711dcc73d34ec387bdb0bf4c0bbae
 
 COCOAPODS: 1.15.2

@@ -26,5 +26,9 @@ target 'CoinTracker' do
     pod 'MBProgressHUD', '~> 1.2.0'
     pod 'SDWebImage', '~> 5.8.4'
     pod 'SwiftLint', '~> 0.46.0'
+    
+    # App Center
+    pod 'AppCenter/Analytics'
+    pod 'AppCenter/Crashes'
 
 end

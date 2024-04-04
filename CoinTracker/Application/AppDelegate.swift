@@ -8,6 +8,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import AppCenter
+import AppCenterCrashes
+import AppCenterAnalytics
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +20,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var disposeBag = DisposeBag()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        AppCenter.start(withAppSecret: "b3297144-0ed3-425f-81ef-91a4c62743e5", services: [Analytics.self, Crashes.self])
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
