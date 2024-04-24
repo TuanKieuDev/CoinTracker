@@ -9,7 +9,11 @@ protocol Assembler: AnyObject,
                     GatewaysAssembler,
                     AppAssembler,
                     MainAssembler,
-                    HomeAssembler {
+                    HomeAssembler,
+                    NewsAssembler,
+                    ExchangeAssembler,
+                    ProfileAssembler
+{
     
 }
 

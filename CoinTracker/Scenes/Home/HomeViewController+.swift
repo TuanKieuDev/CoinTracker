@@ -8,21 +8,6 @@
 import Foundation
 import UIKit
 
-//extension HomeViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 1
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(for: indexPath,
-//                                                      cellType: CurrentWeatherCollectionViewCell.self)
-//        
-//        return cell
-//    }
-//    
-//    
-//}
-
 extension HomeViewController: UICollectionViewDelegate {
     
 }

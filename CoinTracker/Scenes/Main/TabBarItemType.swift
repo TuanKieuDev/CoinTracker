@@ -10,8 +10,9 @@ import UIKit
 
 enum TabBarItemType: CaseIterable {
     case home
-    case forecast
-    case settings
+    case news
+    case exchange
+    case profile
 
     static var allValues: [TabBarItemType] {
         return TabBarItemType.allCases
@@ -23,10 +24,12 @@ extension TabBarItemType {
         switch self {
         case .home:
             return UIImage(systemName: "house")
-        case .forecast:
-            return UIImage(systemName: "radio")
-        case .settings:
-            return UIImage(systemName: "slider.vertical.3")
+        case .news:
+            return UIImage(systemName: "newspaper")
+        case .exchange:
+            return UIImage(systemName: "bitcoinsign.arrow.circlepath")
+        case .profile:
+            return UIImage(systemName: "person")
         }
     }
     
@@ -34,10 +37,12 @@ extension TabBarItemType {
         switch self {
         case .home:
             return Constants.TabBar.home
-        case .forecast:
-            return Constants.TabBar.forecast
-        case .settings:
-            return Constants.TabBar.settings
+        case .news:
+            return Constants.TabBar.news
+        case .exchange:
+            return Constants.TabBar.exchange
+        case .profile:
+            return Constants.TabBar.profile
         }
     }
     

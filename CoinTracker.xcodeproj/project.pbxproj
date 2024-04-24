@@ -42,6 +42,25 @@
 		06A8C88A2B98BFB8007E9018 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A8C8892B98BFB8007E9018 /* Home.storyboard */; };
 		06A8C88C2B98C08B007E9018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A8C88B2B98C08B007E9018 /* Main.storyboard */; };
 		32E3C6E3AC60622D7E4492F8 /* Pods_CoinTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9039EB0D05AD58F3C5A26C2 /* Pods_CoinTracker.framework */; };
+		64034E582BD8B23B006AD57D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64034E572BD8B23B006AD57D /* Images.xcassets */; };
+		64034E612BD8B56F006AD57D /* NewsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E5C2BD8B56F006AD57D /* NewsAssembler.swift */; };
+		64034E622BD8B56F006AD57D /* NewsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E5D2BD8B56F006AD57D /* NewsNavigator.swift */; };
+		64034E632BD8B56F006AD57D /* NewsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E5E2BD8B56F006AD57D /* NewsUseCase.swift */; };
+		64034E642BD8B56F006AD57D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E5F2BD8B56F006AD57D /* NewsViewController.swift */; };
+		64034E652BD8B56F006AD57D /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E602BD8B56F006AD57D /* NewsViewModel.swift */; };
+		64034E672BD8B58F006AD57D /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64034E662BD8B58F006AD57D /* News.storyboard */; };
+		64034E6D2BD8BA52006AD57D /* ExchangeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E682BD8BA52006AD57D /* ExchangeAssembler.swift */; };
+		64034E6E2BD8BA52006AD57D /* ExchangeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E692BD8BA52006AD57D /* ExchangeNavigator.swift */; };
+		64034E6F2BD8BA52006AD57D /* ExchangeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E6A2BD8BA52006AD57D /* ExchangeUseCase.swift */; };
+		64034E702BD8BA52006AD57D /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E6B2BD8BA52006AD57D /* ExchangeViewController.swift */; };
+		64034E712BD8BA52006AD57D /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E6C2BD8BA52006AD57D /* ExchangeViewModel.swift */; };
+		64034E772BD8BAC7006AD57D /* ProfileAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E722BD8BAC7006AD57D /* ProfileAssembler.swift */; };
+		64034E782BD8BAC7006AD57D /* ProfileNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E732BD8BAC7006AD57D /* ProfileNavigator.swift */; };
+		64034E792BD8BAC7006AD57D /* ProfileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E742BD8BAC7006AD57D /* ProfileUseCase.swift */; };
+		64034E7A2BD8BAC7006AD57D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E752BD8BAC7006AD57D /* ProfileViewController.swift */; };
+		64034E7B2BD8BAC7006AD57D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034E762BD8BAC7006AD57D /* ProfileViewModel.swift */; };
+		64034E7D2BD8BAD0006AD57D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64034E7C2BD8BAD0006AD57D /* Profile.storyboard */; };
+		64034E7F2BD8BAE4006AD57D /* Exchange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64034E7E2BD8BAE4006AD57D /* Exchange.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +112,25 @@
 		06A8C8892B98BFB8007E9018 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		06A8C88B2B98C08B007E9018 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3E4C8CCF6AEA9B67AEC26BF3 /* Pods-CoinTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.release.xcconfig"; path = "Target Support Files/Pods-CoinTracker/Pods-CoinTracker.release.xcconfig"; sourceTree = "<group>"; };
+		64034E572BD8B23B006AD57D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		64034E5C2BD8B56F006AD57D /* NewsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAssembler.swift; sourceTree = "<group>"; };
+		64034E5D2BD8B56F006AD57D /* NewsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNavigator.swift; sourceTree = "<group>"; };
+		64034E5E2BD8B56F006AD57D /* NewsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUseCase.swift; sourceTree = "<group>"; };
+		64034E5F2BD8B56F006AD57D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		64034E602BD8B56F006AD57D /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		64034E662BD8B58F006AD57D /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		64034E682BD8BA52006AD57D /* ExchangeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAssembler.swift; sourceTree = "<group>"; };
+		64034E692BD8BA52006AD57D /* ExchangeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeNavigator.swift; sourceTree = "<group>"; };
+		64034E6A2BD8BA52006AD57D /* ExchangeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeUseCase.swift; sourceTree = "<group>"; };
+		64034E6B2BD8BA52006AD57D /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		64034E6C2BD8BA52006AD57D /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
+		64034E722BD8BAC7006AD57D /* ProfileAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembler.swift; sourceTree = "<group>"; };
+		64034E732BD8BAC7006AD57D /* ProfileNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigator.swift; sourceTree = "<group>"; };
+		64034E742BD8BAC7006AD57D /* ProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUseCase.swift; sourceTree = "<group>"; };
+		64034E752BD8BAC7006AD57D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		64034E762BD8BAC7006AD57D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		64034E7C2BD8BAD0006AD57D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		64034E7E2BD8BAE4006AD57D /* Exchange.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exchange.storyboard; sourceTree = "<group>"; };
 		8CD92CBEACB4A2F3C86197B4 /* Pods-CoinTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.debug.xcconfig"; path = "Target Support Files/Pods-CoinTracker/Pods-CoinTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A9039EB0D05AD58F3C5A26C2 /* Pods_CoinTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,10 +185,10 @@
 		06A8C8282B973176007E9018 /* CoinTracker */ = {
 			isa = PBXGroup;
 			children = (
+				64034E562BD8B13F006AD57D /* Resources */,
 				06A8C83D2B975577007E9018 /* Application */,
 				06A8C8402B9755D1007E9018 /* Config */,
 				06A8C8442B9755FC007E9018 /* Data */,
-				06A8C8432B9755EF007E9018 /* Resources */,
 				06A8C8422B9755E6007E9018 /* Scenes */,
 				06A8C8412B9755DB007E9018 /* Support */,
 				06A8C82D2B973176007E9018 /* ViewController.swift */,
@@ -192,23 +230,14 @@
 			isa = PBXGroup;
 			children = (
 				06A8C85D2B977083007E9018 /* Common */,
-				06A8C8532B9757D7007E9018 /* Register */,
-				06A8C8522B9757C5007E9018 /* Profile */,
-				06A8C8512B9757BF007E9018 /* News */,
-				06A8C8502B9757AE007E9018 /* Trade */,
-				06A8C84F2B9756D5007E9018 /* LogIn */,
 				06A8C84E2B9756CD007E9018 /* Home */,
+				64034E592BD8B4EC006AD57D /* News */,
+				64034E5A2BD8B4FC006AD57D /* Exchange */,
+				64034E5B2BD8B504006AD57D /* Profile */,
 				06A8C84D2B9756BC007E9018 /* Main */,
 				06A8C84C2B9756AD007E9018 /* App */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		06A8C8432B9755EF007E9018 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		06A8C8442B9755FC007E9018 /* Data */ = {
@@ -265,41 +294,6 @@
 				06A8C8892B98BFB8007E9018 /* Home.storyboard */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		06A8C84F2B9756D5007E9018 /* LogIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LogIn;
-			sourceTree = "<group>";
-		};
-		06A8C8502B9757AE007E9018 /* Trade */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Trade;
-			sourceTree = "<group>";
-		};
-		06A8C8512B9757BF007E9018 /* News */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		06A8C8522B9757C5007E9018 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		06A8C8532B9757D7007E9018 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
 			sourceTree = "<group>";
 		};
 		06A8C85D2B977083007E9018 /* Common */ = {
@@ -359,6 +353,53 @@
 				A9039EB0D05AD58F3C5A26C2 /* Pods_CoinTracker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64034E562BD8B13F006AD57D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64034E572BD8B23B006AD57D /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		64034E592BD8B4EC006AD57D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				64034E5C2BD8B56F006AD57D /* NewsAssembler.swift */,
+				64034E5D2BD8B56F006AD57D /* NewsNavigator.swift */,
+				64034E5E2BD8B56F006AD57D /* NewsUseCase.swift */,
+				64034E5F2BD8B56F006AD57D /* NewsViewController.swift */,
+				64034E602BD8B56F006AD57D /* NewsViewModel.swift */,
+				64034E662BD8B58F006AD57D /* News.storyboard */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		64034E5A2BD8B4FC006AD57D /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				64034E682BD8BA52006AD57D /* ExchangeAssembler.swift */,
+				64034E692BD8BA52006AD57D /* ExchangeNavigator.swift */,
+				64034E6A2BD8BA52006AD57D /* ExchangeUseCase.swift */,
+				64034E6B2BD8BA52006AD57D /* ExchangeViewController.swift */,
+				64034E6C2BD8BA52006AD57D /* ExchangeViewModel.swift */,
+				64034E7E2BD8BAE4006AD57D /* Exchange.storyboard */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		64034E5B2BD8B504006AD57D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				64034E722BD8BAC7006AD57D /* ProfileAssembler.swift */,
+				64034E732BD8BAC7006AD57D /* ProfileNavigator.swift */,
+				64034E742BD8BAC7006AD57D /* ProfileUseCase.swift */,
+				64034E752BD8BAC7006AD57D /* ProfileViewController.swift */,
+				64034E762BD8BAC7006AD57D /* ProfileViewModel.swift */,
+				64034E7C2BD8BAD0006AD57D /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		E8FB3EA45F060E322581AA8A /* Pods */ = {
@@ -462,8 +503,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A8C88A2B98BFB8007E9018 /* Home.storyboard in Resources */,
+				64034E672BD8B58F006AD57D /* News.storyboard in Resources */,
+				64034E582BD8B23B006AD57D /* Images.xcassets in Resources */,
 				06A8C8362B973179007E9018 /* LaunchScreen.storyboard in Resources */,
 				06A8C8332B973179007E9018 /* Assets.xcassets in Resources */,
+				64034E7F2BD8BAE4006AD57D /* Exchange.storyboard in Resources */,
+				64034E7D2BD8BAD0006AD57D /* Profile.storyboard in Resources */,
 				06A8C88C2B98C08B007E9018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,33 +587,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64034E6D2BD8BA52006AD57D /* ExchangeAssembler.swift in Sources */,
 				06A8C8782B979915007E9018 /* MainViewController.swift in Sources */,
 				06A8C8802B98BF7E007E9018 /* HomeNavigator.swift in Sources */,
 				06A8C8682B9772E6007E9018 /* AppGateway.swift in Sources */,
+				64034E6E2BD8BA52006AD57D /* ExchangeNavigator.swift in Sources */,
 				06A8C85B2B976BC2007E9018 /* AppViewModel.swift in Sources */,
+				64034E782BD8BAC7006AD57D /* ProfileNavigator.swift in Sources */,
 				06A8C8482B97567B007E9018 /* Utils.swift in Sources */,
 				06A8C8702B979713007E9018 /* GatewaysAssembler.swift in Sources */,
 				06A8C8612B97715A007E9018 /* Bindable.swift in Sources */,
 				06A8C8572B976BA8007E9018 /* AppNavigator.swift in Sources */,
+				64034E712BD8BA52006AD57D /* ExchangeViewModel.swift in Sources */,
 				06A8C8762B979906007E9018 /* MainUseCase.swift in Sources */,
+				64034E652BD8B56F006AD57D /* NewsViewModel.swift in Sources */,
 				06A8C8462B97563A007E9018 /* APIUrls.swift in Sources */,
 				06A8C82E2B973176007E9018 /* ViewController.swift in Sources */,
 				06A8C87C2B979A71007E9018 /* TabBarItemType.swift in Sources */,
 				06A8C8822B98BF8A007E9018 /* HomeUseCase.swift in Sources */,
+				64034E7B2BD8BAC7006AD57D /* ProfileViewModel.swift in Sources */,
 				06A8C8632B977172007E9018 /* ViewModel.swift in Sources */,
 				06A8C8842B98BF96007E9018 /* HomeViewController.swift in Sources */,
+				64034E642BD8B56F006AD57D /* NewsViewController.swift in Sources */,
 				06A8C8882B98BFA9007E9018 /* HomeViewModel.swift in Sources */,
 				06A8C86A2B97730B007E9018 /* AppSettings.swift in Sources */,
+				64034E702BD8BA52006AD57D /* ExchangeViewController.swift in Sources */,
 				06A8C87E2B98BF75007E9018 /* HomeAssembler.swift in Sources */,
+				64034E772BD8BAC7006AD57D /* ProfileAssembler.swift in Sources */,
+				64034E632BD8B56F006AD57D /* NewsUseCase.swift in Sources */,
 				06A8C8742B9798FD007E9018 /* MainNavigator.swift in Sources */,
 				06A8C8552B976B97007E9018 /* AppAssembler.swift in Sources */,
 				06A8C83F2B975592007E9018 /* Assembler.swift in Sources */,
+				64034E6F2BD8BA52006AD57D /* ExchangeUseCase.swift in Sources */,
 				06A8C85F2B97709D007E9018 /* BaseNavigatorController.swift in Sources */,
+				64034E622BD8B56F006AD57D /* NewsNavigator.swift in Sources */,
 				06A8C8592B976BB7007E9018 /* AppUseCase.swift in Sources */,
 				06A8C86E2B977343007E9018 /* Storage.swift in Sources */,
 				06A8C8862B98BFA0007E9018 /* HomeViewController+.swift in Sources */,
+				64034E612BD8B56F006AD57D /* NewsAssembler.swift in Sources */,
+				64034E792BD8BAC7006AD57D /* ProfileUseCase.swift in Sources */,
 				06A8C82A2B973176007E9018 /* AppDelegate.swift in Sources */,
 				06A8C84A2B975685007E9018 /* Constants.swift in Sources */,
+				64034E7A2BD8BAC7006AD57D /* ProfileViewController.swift in Sources */,
 				06A8C8722B9798EE007E9018 /* MainAssembler.swift in Sources */,
 				06A8C87A2B979924007E9018 /* MainViewModel.swift in Sources */,
 			);

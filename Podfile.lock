@@ -1,10 +1,5 @@
 PODS:
-  - Alamofire (5.4.4)
-  - AppCenter/Analytics (5.0.4):
-    - AppCenter/Core
-  - AppCenter/Core (5.0.4)
-  - AppCenter/Crashes (5.0.4):
-    - AppCenter/Core
+  - Alamofire (5.9.1)
   - Differentiator (4.0.1)
   - MBProgressHUD (1.2.0)
   - "NSObject+Rx (5.1.0)":
@@ -36,17 +31,15 @@ PODS:
   - RxSwiftUtilities (2.2.0):
     - RxCocoa (~> 5.1)
     - RxSwift (~> 5.1)
-  - SDWebImage (5.8.4):
-    - SDWebImage/Core (= 5.8.4)
-  - SDWebImage/Core (5.8.4)
+  - SDWebImage (5.18.12):
+    - SDWebImage/Core (= 5.18.12)
+  - SDWebImage/Core (5.18.12)
   - SwiftLint (0.46.5)
-  - Then (2.7.0)
+  - Then (3.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.4.1)
-  - AppCenter/Analytics
-  - AppCenter/Crashes
-  - MBProgressHUD (~> 1.2.0)
+  - Alamofire (~> 5.9.1)
+  - MBProgressHUD (from `https://github.com/jdg/MBProgressHUD.git`)
   - "NSObject+Rx (~> 5.1.0)"
   - ObjectMapper (~> 4.2.0)
   - Reusable (~> 4.1.1)
@@ -56,16 +49,14 @@ DEPENDENCIES:
   - RxGesture
   - RxSwift (~> 5.1.1)
   - RxSwiftUtilities (~> 2.2.0)
-  - SDWebImage (~> 5.8.4)
+  - SDWebImage (~> 5.18.7)
   - SwiftLint (~> 0.46.0)
-  - Then (~> 2.7.0)
+  - Then (~> 3.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AppCenter
     - Differentiator
-    - MBProgressHUD
     - "NSObject+Rx"
     - ObjectMapper
     - Reusable
@@ -80,11 +71,19 @@ SPEC REPOS:
     - SwiftLint
     - Then
 
+EXTERNAL SOURCES:
+  MBProgressHUD:
+    :git: https://github.com/jdg/MBProgressHUD.git
+
+CHECKOUT OPTIONS:
+  MBProgressHUD:
+    :commit: 18c442d57398cee5ef57f852df10fc5ff65f0763
+    :git: https://github.com/jdg/MBProgressHUD.git
+
 SPEC CHECKSUMS:
-  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
-  AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MBProgressHUD: 1b0fb447e80a0fda94808180750e8b78a07b3cd2
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
@@ -95,10 +94,10 @@ SPEC CHECKSUMS:
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   RxSwiftUtilities: 59e2d82daf74b9962f732b09e6da85a26281cfc0
-  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SDWebImage: 2d6d229046fea284d62e36bfb8ebe8287dfc5b10
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
-  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 374a8d50974711dcc73d34ec387bdb0bf4c0bbae
+PODFILE CHECKSUM: bd429df68327e1c876e3e7630c2afbf0f31fff98
 
 COCOAPODS: 1.15.2

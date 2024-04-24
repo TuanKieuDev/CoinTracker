@@ -11,11 +11,15 @@ struct Constants {
     struct Storyboards {
         static let main = UIStoryboard(name: "Main", bundle: nil)
         static let home = UIStoryboard(name: "Home", bundle: nil)
+        static let news = UIStoryboard(name: "News", bundle: nil)
+        static let exchange = UIStoryboard(name: "Exchange", bundle: nil)
+        static let profile = UIStoryboard(name: "Profile", bundle: nil)
     }
     
     struct TabBar {
         static let home = "Home"
-        static let forecast = "Forecast"
-        static let settings = "Settings"
+        static let news = "News"
+        static let exchange = "Exchange"
+        static let profile = "Profile"
     }
 }

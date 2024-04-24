@@ -21,30 +21,37 @@ extension MainAssembler {
         vc.bindViewModel(to: vm)
         
         let homeNavigation = BaseNavigationController()
-//        let forecastNavigation = BaseNavigationController()
-//        let settingsNavigation = BaseNavigationController()
+        let newsNavigation = BaseNavigationController()
+        let exchangeNavigation = BaseNavigationController()
+        let profileNavigation = BaseNavigationController()
 
         let homeNavigator: HomeNavigatorType = assembler.resolve(navigationController: homeNavigation)
         homeNavigator.toHome()
         
-//        let forecastNavigator: ForecastNavigatorType = assembler.resolve(navigationController: forecastNavigation)
-//        forecastNavigator.toForecast()
-//
-//        let settingsNavigator: SettingsNavigatorType = assembler.resolve(navigationController: settingsNavigation)
-//        settingsNavigator.toSettings()
+        let newsNavigator: NewsNavigatorType = assembler.resolve(navigationController: newsNavigation)
+        newsNavigator.toNews()
+
+        let exchangeNavigator: ExchangeNavigatorType = assembler.resolve(navigationController: exchangeNavigation)
+        exchangeNavigator.toExchange()
+        
+        let profileNavigator: ProfileNavigatorType = assembler.resolve(navigationController: profileNavigation)
+        profileNavigator.toProfile()
         
         homeNavigation.isNavigationBarHidden = true
-//        forecastNavigation.isNavigationBarHidden = true
-//        settingsNavigation.isNavigationBarHidden = true
+        newsNavigation.isNavigationBarHidden = true
+        exchangeNavigation.isNavigationBarHidden = true
+        profileNavigation.isNavigationBarHidden = true
         
         homeNavigation.tabBarItem = TabBarItemType.home.tabbarItem
-//        forecastNavigation.tabBarItem = TabBarItemType.forecast.tabbarItem
-//        settingsNavigation.tabBarItem = TabBarItemType.settings.tabbarItem
+        newsNavigation.tabBarItem = TabBarItemType.news.tabbarItem
+        exchangeNavigation.tabBarItem = TabBarItemType.exchange.tabbarItem
+        profileNavigation.tabBarItem = TabBarItemType.profile.tabbarItem
 
         vc.viewControllers = [
-            homeNavigation
-//            forecastNavigation,
-//            settingsNavigation
+            homeNavigation,
+            newsNavigation,
+            exchangeNavigation,
+            profileNavigation
         ]
         
         return vc

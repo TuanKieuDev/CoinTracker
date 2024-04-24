@@ -15,7 +15,6 @@ final class HomeViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
     // MARK: - Properties
     
     var viewModel: HomeViewModel!
