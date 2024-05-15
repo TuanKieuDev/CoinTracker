@@ -35,8 +35,6 @@ extension BaseNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        // set `extendedLayoutIncludesOpaqueBars` is true, if not, `GCKUICastContainerViewController` will calculate
-        // wrong frame of content view inside.
         viewController.extendedLayoutIncludesOpaqueBars = true
 //        viewController.removeBackButtonTitle()
     }

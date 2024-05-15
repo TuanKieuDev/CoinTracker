@@ -21,19 +21,18 @@ extension MainAssembler {
         vc.bindViewModel(to: vm)
         
         let homeNavigation = BaseNavigationController()
-        let newsNavigation = BaseNavigationController()
-        let exchangeNavigation = BaseNavigationController()
-        let profileNavigation = BaseNavigationController()
-
         let homeNavigator: HomeNavigatorType = assembler.resolve(navigationController: homeNavigation)
         homeNavigator.toHome()
         
+        let newsNavigation = BaseNavigationController()
         let newsNavigator: NewsNavigatorType = assembler.resolve(navigationController: newsNavigation)
         newsNavigator.toNews()
-
+        
+        let exchangeNavigation = BaseNavigationController()
         let exchangeNavigator: ExchangeNavigatorType = assembler.resolve(navigationController: exchangeNavigation)
         exchangeNavigator.toExchange()
         
+        let profileNavigation = BaseNavigationController()
         let profileNavigator: ProfileNavigatorType = assembler.resolve(navigationController: profileNavigation)
         profileNavigator.toProfile()
         

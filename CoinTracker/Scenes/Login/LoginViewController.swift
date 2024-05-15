@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  LoginViewController.swift
 //  CoinTracker
 //
 //  Created by kieu.anh.tuanb on 24/04/2024.
@@ -11,15 +11,16 @@ import RxCocoa
 import Reusable
 import Then
 
-final class ProfileViewController: UIViewController, Bindable {
+final class LoginViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var logoutButton: AuthButton!
+    @IBOutlet private weak var normalLoginButton: AuthButton!
+    @IBOutlet private weak var googleLoginButton: BorderedButton!
     
     // MARK: - Properties
-    private var logoutTrigger = PublishSubject<Void>()
+    private var normalLoginTrigger = PublishSubject<Void>()
     
-    var viewModel: ProfileViewModel!
+    var viewModel: LoginViewModel!
     var disposeBag = DisposeBag()
     
     // MARK: - Life Cycle
@@ -32,26 +33,26 @@ final class ProfileViewController: UIViewController, Bindable {
     // MARK: - Methods
     
     private func configView() {
-        logoutButton.rx.tap.subscribe(
+        normalLoginButton.rx.tap.subscribe(
             onNext: {
-                self.logoutTrigger.onNext(())
+                self.normalLoginTrigger.onNext(())
             }
         )
         .disposed(by: disposeBag)
     }
     
     func bindViewModel() {
-        let input = ProfileViewModel.Input(logoutTrigger: logoutTrigger.asDriver(onErrorJustReturn: ()))
+        let input = LoginViewModel.Input(normalLoginTrigger: normalLoginTrigger.asDriver(onErrorJustReturn: ()))
         let output = viewModel.transform(input, disposeBag: disposeBag)
     }
 }
 
 // MARK: - Binders
-extension ProfileViewController {
+extension LoginViewController {
     
 }
 
 // MARK: - StoryboardSceneBased
-extension ProfileViewController: StoryboardSceneBased {
-    static var sceneStoryboard = Constants.Storyboards.profile
+extension LoginViewController: StoryboardSceneBased {
+    static var sceneStoryboard = Constants.Storyboards.login
 }
