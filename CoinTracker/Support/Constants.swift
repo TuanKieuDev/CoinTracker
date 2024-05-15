@@ -14,6 +14,8 @@ struct Constants {
         static let news = UIStoryboard(name: "News", bundle: nil)
         static let exchange = UIStoryboard(name: "Exchange", bundle: nil)
         static let profile = UIStoryboard(name: "Profile", bundle: nil)
+        static let login = UIStoryboard(name: "Login", bundle: nil)
+        static let register = UIStoryboard(name: "Register", bundle: nil)
     }
     
     struct TabBar {

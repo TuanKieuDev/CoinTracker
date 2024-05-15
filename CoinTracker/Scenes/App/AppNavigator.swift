@@ -9,6 +9,7 @@ import UIKit
 
 protocol AppNavigatorType {
     func toMain()
+    func toLogin()
 }
 
 struct AppNavigator: AppNavigatorType {
@@ -18,6 +19,15 @@ struct AppNavigator: AppNavigatorType {
     func toMain() {
         let nav = BaseNavigationController()
         let vc: MainViewController = assembler.resolve(window: window, assembler: assembler)
+        nav.viewControllers.append(vc)
+        
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+    }
+    
+    func toLogin() {
+        let nav = BaseNavigationController()
+        let vc: LoginViewController = assembler.resolve(window: window, navigationController: nav)
         nav.viewControllers.append(vc)
         
         window.rootViewController = nav

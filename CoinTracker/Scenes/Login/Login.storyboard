@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wir-U5-fkO">
+                                <rect key="frame" x="20" y="79" width="353" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saC-LG-XZq">
+                                <rect key="frame" x="16" y="213" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mk2-ED-E7d" customClass="AuthTextField" customModule="CoinTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="155" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-ew-oi8" customClass="AuthButton" customModule="CoinTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="279" width="361" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mbs-gy-r0p"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93U-pI-yqd">
+                                <rect key="frame" x="184.66666666666666" y="343" width="23.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16h-cd-e18" customClass="BorderedButton" customModule="CoinTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="388" width="361" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lSc-z1-7GU"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Google"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ygJ-ew-oi8" secondAttribute="trailing" constant="16" id="3fp-1A-9y2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="saC-LG-XZq" secondAttribute="trailing" constant="16" id="5qo-4B-lQ6"/>
+                            <constraint firstItem="ygJ-ew-oi8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="6jc-mM-0Gb"/>
+                            <constraint firstItem="93U-pI-yqd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="AHr-ra-aLZ"/>
+                            <constraint firstItem="saC-LG-XZq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="E4G-US-jGm"/>
+                            <constraint firstItem="saC-LG-XZq" firstAttribute="top" secondItem="Mk2-ED-E7d" secondAttribute="bottom" constant="24" id="H2t-Eb-g8s"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mk2-ED-E7d" secondAttribute="trailing" constant="16" id="OCO-kj-cUO"/>
+                            <constraint firstItem="ygJ-ew-oi8" firstAttribute="top" secondItem="saC-LG-XZq" secondAttribute="bottom" constant="32" id="RJg-2R-Wf8"/>
+                            <constraint firstItem="Mk2-ED-E7d" firstAttribute="top" secondItem="wir-U5-fkO" secondAttribute="bottom" constant="32" id="avP-iu-tna"/>
+                            <constraint firstItem="Mk2-ED-E7d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="bld-Nx-7LH"/>
+                            <constraint firstItem="16h-cd-e18" firstAttribute="top" secondItem="93U-pI-yqd" secondAttribute="bottom" constant="24" id="cXQ-bO-KjV"/>
+                            <constraint firstItem="93U-pI-yqd" firstAttribute="top" secondItem="ygJ-ew-oi8" secondAttribute="bottom" constant="24" id="eia-bd-eSs"/>
+                            <constraint firstItem="wir-U5-fkO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gNv-f1-dxk"/>
+                            <constraint firstItem="16h-cd-e18" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hRR-tN-A7S"/>
+                            <constraint firstItem="wir-U5-fkO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="r70-hR-few"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="16h-cd-e18" secondAttribute="trailing" constant="16" id="sp3-ng-Y7B"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wir-U5-fkO" secondAttribute="trailing" constant="20" id="tha-9L-2Bw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleLoginButton" destination="16h-cd-e18" id="dTW-Vh-wGI"/>
+                        <outlet property="normalLoginButton" destination="ygJ-ew-oi8" id="6z8-U3-Zn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

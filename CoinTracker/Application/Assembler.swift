@@ -12,8 +12,9 @@ protocol Assembler: AnyObject,
                     HomeAssembler,
                     NewsAssembler,
                     ExchangeAssembler,
-                    ProfileAssembler
-{
+                    ProfileAssembler,
+                    RegisterAssembler,
+                    LoginAssembler {
     
 }
 

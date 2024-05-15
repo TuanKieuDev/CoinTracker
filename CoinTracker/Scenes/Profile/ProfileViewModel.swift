@@ -16,7 +16,7 @@ struct ProfileViewModel {
 // MARK: - ViewModel
 extension ProfileViewModel: ViewModel {
     struct Input {
-        
+        let logoutTrigger: Driver<Void>
     }
     
     struct Output {
@@ -24,7 +24,14 @@ extension ProfileViewModel: ViewModel {
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
-        let output = Output()
-        return output
+        
+        input.logoutTrigger
+
+            .drive(onNext: {
+                self.navigator.toLogin()
+            })
+            .disposed(by: disposeBag)
+        
+        return Output()
     }
 }

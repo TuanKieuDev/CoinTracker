@@ -16,16 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lrY-WL-rCQ">
+                                <rect key="frame" x="60" y="289.66666666666669" width="273" height="273.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lrY-WL-rCQ" secondAttribute="height" multiplier="1:1" id="942-87-9U9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lrY-WL-rCQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="20B-NA-OMU"/>
+                            <constraint firstItem="lrY-WL-rCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="CVu-Vq-FFF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lrY-WL-rCQ" secondAttribute="trailing" constant="60" id="Ts6-iN-OUY"/>
+                            <constraint firstItem="lrY-WL-rCQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mHF-6L-V6J"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="launchIcon" width="1200" height="1200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
