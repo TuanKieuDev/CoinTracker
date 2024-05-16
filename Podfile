@@ -26,6 +26,9 @@ target 'CoinTracker' do
     pod 'MBProgressHUD',:git => 'https://github.com/jdg/MBProgressHUD.git'
     pod 'SDWebImage', '~> 5.18.7'
     pod 'SwiftLint', '~> 0.46.0'
+    
+    # Others
+    pod 'Charts', '4.1.0'
 
 end
 

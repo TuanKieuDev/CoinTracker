@@ -14,6 +14,7 @@ import Then
 final class HomeViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Properties
     
@@ -24,21 +25,22 @@ final class HomeViewController: UIViewController, Bindable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        configView()
+        configView()
     }
     
     // MARK: - Methods
     
-//    private func configView() {
-//        collectionView.do {
-//            $0.register(cellType: CurrentWeatherCollectionViewCell.self)
-//        }
-//
-//        collectionView.do {
-//            $0.delegate = self
-//            $0.dataSource = self
-//        }
-//    }
+    private func configView() {
+        collectionView.do {
+            $0.register(cellType: PortfolioCollectionViewCell.self)
+            $0.register(cellType: TradeCollectionViewCell.self)
+        }
+
+        collectionView.do {
+            $0.delegate = self
+            $0.dataSource = self
+        }
+    }
     
     func bindViewModel() {
         let input = HomeViewModel.Input()

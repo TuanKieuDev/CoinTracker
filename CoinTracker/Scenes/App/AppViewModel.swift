@@ -30,7 +30,7 @@ extension AppViewModel: ViewModel {
 //                    .asDriverOnErrorJustComplete()
 //            }
             .drive(onNext:
-                    self.navigator.toLogin
+                    self.navigator.toMain
             )
             .disposed(by: disposeBag)
         

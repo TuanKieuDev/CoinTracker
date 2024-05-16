@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (5.9.1)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
   - Differentiator (4.0.1)
   - MBProgressHUD (1.2.0)
   - "NSObject+Rx (5.1.0)":
@@ -34,11 +38,13 @@ PODS:
   - SDWebImage (5.18.12):
     - SDWebImage/Core (= 5.18.12)
   - SDWebImage/Core (5.18.12)
+  - SwiftAlgorithms (1.0.0)
   - SwiftLint (0.46.5)
   - Then (3.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.9.1)
+  - Charts (= 4.1.0)
   - MBProgressHUD (from `https://github.com/jdg/MBProgressHUD.git`)
   - "NSObject+Rx (~> 5.1.0)"
   - ObjectMapper (~> 4.2.0)
@@ -56,6 +62,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - Differentiator
     - "NSObject+Rx"
     - ObjectMapper
@@ -68,6 +75,7 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftUtilities
     - SDWebImage
+    - SwiftAlgorithms
     - SwiftLint
     - Then
 
@@ -82,6 +90,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   MBProgressHUD: 1b0fb447e80a0fda94808180750e8b78a07b3cd2
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
@@ -95,9 +104,10 @@ SPEC CHECKSUMS:
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   RxSwiftUtilities: 59e2d82daf74b9962f732b09e6da85a26281cfc0
   SDWebImage: 2d6d229046fea284d62e36bfb8ebe8287dfc5b10
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: bd429df68327e1c876e3e7630c2afbf0f31fff98
+PODFILE CHECKSUM: b068ae5357f9cb3ded01e79cb455e3a252d0a5c2
 
 COCOAPODS: 1.15.2

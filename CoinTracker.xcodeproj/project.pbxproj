@@ -78,6 +78,18 @@
 		64034EAE2BD90359006AD57D /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034EAD2BD90359006AD57D /* BorderedButton.swift */; };
 		64B6009F2BF45F4A00DCCCF9 /* PresentLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6009E2BF45F4A00DCCCF9 /* PresentLogin.swift */; };
 		64B600A22BF4606E00DCCCF9 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */; };
+		64B600A42BF497F100DCCCF9 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A32BF497F100DCCCF9 /* TitleLabel.swift */; };
+		64B600A72BF4985E00DCCCF9 /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A62BF4985E00DCCCF9 /* ShadowImageView.swift */; };
+		64B600A92BF4988F00DCCCF9 /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A82BF4988F00DCCCF9 /* CALayer+.swift */; };
+		64B600AB2BF49A6900DCCCF9 /* ActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600AA2BF49A6900DCCCF9 /* ActionLabel.swift */; };
+		64B600AD2BF49D0D00DCCCF9 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600AC2BF49D0D00DCCCF9 /* UIColor+.swift */; };
+		64B600AF2BF4A05D00DCCCF9 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600AE2BF4A05D00DCCCF9 /* AppLabel.swift */; };
+		64B600B32BF4C2A700DCCCF9 /* CryptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600B12BF4C2A700DCCCF9 /* CryptoCollectionViewCell.swift */; };
+		64B600B42BF4C2A700DCCCF9 /* CryptoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B600B22BF4C2A700DCCCF9 /* CryptoCollectionViewCell.xib */; };
+		64B600C02BF5B43200DCCCF9 /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600BE2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.swift */; };
+		64B600C12BF5B43200DCCCF9 /* PortfolioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B600BF2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.xib */; };
+		64B600C42BF5B44B00DCCCF9 /* TradeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600C22BF5B44B00DCCCF9 /* TradeCollectionViewCell.swift */; };
+		64B600C52BF5B44B00DCCCF9 /* TradeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B600C32BF5B44B00DCCCF9 /* TradeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +177,18 @@
 		64034EAD2BD90359006AD57D /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		64B6009E2BF45F4A00DCCCF9 /* PresentLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLogin.swift; sourceTree = "<group>"; };
 		64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		64B600A32BF497F100DCCCF9 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		64B600A62BF4985E00DCCCF9 /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
+		64B600A82BF4988F00DCCCF9 /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
+		64B600AA2BF49A6900DCCCF9 /* ActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabel.swift; sourceTree = "<group>"; };
+		64B600AC2BF49D0D00DCCCF9 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		64B600AE2BF4A05D00DCCCF9 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		64B600B12BF4C2A700DCCCF9 /* CryptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewCell.swift; sourceTree = "<group>"; };
+		64B600B22BF4C2A700DCCCF9 /* CryptoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCollectionViewCell.xib; sourceTree = "<group>"; };
+		64B600BE2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
+		64B600BF2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfolioCollectionViewCell.xib; sourceTree = "<group>"; };
+		64B600C22BF5B44B00DCCCF9 /* TradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeCollectionViewCell.swift; sourceTree = "<group>"; };
+		64B600C32BF5B44B00DCCCF9 /* TradeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradeCollectionViewCell.xib; sourceTree = "<group>"; };
 		8CD92CBEACB4A2F3C86197B4 /* Pods-CoinTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTracker.debug.xcconfig"; path = "Target Support Files/Pods-CoinTracker/Pods-CoinTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A9039EB0D05AD58F3C5A26C2 /* Pods_CoinTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -316,6 +340,7 @@
 		06A8C84E2B9756CD007E9018 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				64B600B52BF4C42500DCCCF9 /* Cell */,
 				06A8C87D2B98BF75007E9018 /* HomeAssembler.swift */,
 				06A8C87F2B98BF7E007E9018 /* HomeNavigator.swift */,
 				06A8C8812B98BF8A007E9018 /* HomeUseCase.swift */,
@@ -470,6 +495,8 @@
 		64034EA52BD8E724006AD57D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64B600B02BF4C27E00DCCCF9 /* CryptoCell */,
+				64B600A52BF4985200DCCCF9 /* ImageView */,
 				64034EAC2BD8FE83006AD57D /* Label */,
 				64034EA92BD8F3BC006AD57D /* Button */,
 				64034EA62BD8E78E006AD57D /* TextField */,
@@ -497,6 +524,9 @@
 		64034EAC2BD8FE83006AD57D /* Label */ = {
 			isa = PBXGroup;
 			children = (
+				64B600A32BF497F100DCCCF9 /* TitleLabel.swift */,
+				64B600AA2BF49A6900DCCCF9 /* ActionLabel.swift */,
+				64B600AE2BF4A05D00DCCCF9 /* AppLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -513,8 +543,38 @@
 			isa = PBXGroup;
 			children = (
 				64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */,
+				64B600A82BF4988F00DCCCF9 /* CALayer+.swift */,
+				64B600AC2BF49D0D00DCCCF9 /* UIColor+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64B600A52BF4985200DCCCF9 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				64B600A62BF4985E00DCCCF9 /* ShadowImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		64B600B02BF4C27E00DCCCF9 /* CryptoCell */ = {
+			isa = PBXGroup;
+			children = (
+				64B600B12BF4C2A700DCCCF9 /* CryptoCollectionViewCell.swift */,
+				64B600B22BF4C2A700DCCCF9 /* CryptoCollectionViewCell.xib */,
+			);
+			path = CryptoCell;
+			sourceTree = "<group>";
+		};
+		64B600B52BF4C42500DCCCF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				64B600BE2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.swift */,
+				64B600BF2BF5B43200DCCCF9 /* PortfolioCollectionViewCell.xib */,
+				64B600C22BF5B44B00DCCCF9 /* TradeCollectionViewCell.swift */,
+				64B600C32BF5B44B00DCCCF9 /* TradeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E8FB3EA45F060E322581AA8A /* Pods */ = {
@@ -622,8 +682,11 @@
 				64034E582BD8B23B006AD57D /* Images.xcassets in Resources */,
 				06A8C8362B973179007E9018 /* LaunchScreen.storyboard in Resources */,
 				06A8C8332B973179007E9018 /* Assets.xcassets in Resources */,
+				64B600C12BF5B43200DCCCF9 /* PortfolioCollectionViewCell.xib in Resources */,
 				64034E8D2BD8DC20006AD57D /* Register.storyboard in Resources */,
 				64034E7F2BD8BAE4006AD57D /* Exchange.storyboard in Resources */,
+				64B600C52BF5B44B00DCCCF9 /* TradeCollectionViewCell.xib in Resources */,
+				64B600B42BF4C2A700DCCCF9 /* CryptoCollectionViewCell.xib in Resources */,
 				64034E7D2BD8BAD0006AD57D /* Profile.storyboard in Resources */,
 				06A8C88C2B98C08B007E9018 /* Main.storyboard in Resources */,
 				64034E992BD8DE41006AD57D /* Login.storyboard in Resources */,
@@ -709,6 +772,7 @@
 				64034E882BD8DC17006AD57D /* RegisterNavigator.swift in Sources */,
 				64034E6D2BD8BA52006AD57D /* ExchangeAssembler.swift in Sources */,
 				06A8C8782B979915007E9018 /* MainViewController.swift in Sources */,
+				64B600AF2BF4A05D00DCCCF9 /* AppLabel.swift in Sources */,
 				06A8C8802B98BF7E007E9018 /* HomeNavigator.swift in Sources */,
 				06A8C8682B9772E6007E9018 /* AppGateway.swift in Sources */,
 				64034E6E2BD8BA52006AD57D /* ExchangeNavigator.swift in Sources */,
@@ -716,6 +780,7 @@
 				64034EA32BD8DE80006AD57D /* LoginViewModel.swift in Sources */,
 				64034E782BD8BAC7006AD57D /* ProfileNavigator.swift in Sources */,
 				06A8C8482B97567B007E9018 /* Utils.swift in Sources */,
+				64B600A72BF4985E00DCCCF9 /* ShadowImageView.swift in Sources */,
 				06A8C8702B979713007E9018 /* GatewaysAssembler.swift in Sources */,
 				64034EA12BD8DE80006AD57D /* LoginUseCase.swift in Sources */,
 				06A8C8612B97715A007E9018 /* Bindable.swift in Sources */,
@@ -737,6 +802,7 @@
 				64034EA22BD8DE80006AD57D /* LoginViewController.swift in Sources */,
 				06A8C8882B98BFA9007E9018 /* HomeViewModel.swift in Sources */,
 				06A8C86A2B97730B007E9018 /* AppSettings.swift in Sources */,
+				64B600A42BF497F100DCCCF9 /* TitleLabel.swift in Sources */,
 				64034E702BD8BA52006AD57D /* ExchangeViewController.swift in Sources */,
 				64034E8A2BD8DC17006AD57D /* RegisterViewController.swift in Sources */,
 				06A8C87E2B98BF75007E9018 /* HomeAssembler.swift in Sources */,
@@ -751,15 +817,21 @@
 				64034E6F2BD8BA52006AD57D /* ExchangeUseCase.swift in Sources */,
 				06A8C85F2B97709D007E9018 /* BaseNavigatorController.swift in Sources */,
 				64034E8B2BD8DC17006AD57D /* RegisterViewModel.swift in Sources */,
+				64B600AD2BF49D0D00DCCCF9 /* UIColor+.swift in Sources */,
 				64034E622BD8B56F006AD57D /* NewsNavigator.swift in Sources */,
 				06A8C8592B976BB7007E9018 /* AppUseCase.swift in Sources */,
 				06A8C86E2B977343007E9018 /* Storage.swift in Sources */,
 				06A8C8862B98BFA0007E9018 /* HomeViewController+.swift in Sources */,
 				64034E612BD8B56F006AD57D /* NewsAssembler.swift in Sources */,
+				64B600AB2BF49A6900DCCCF9 /* ActionLabel.swift in Sources */,
 				64034E792BD8BAC7006AD57D /* ProfileUseCase.swift in Sources */,
 				06A8C82A2B973176007E9018 /* AppDelegate.swift in Sources */,
+				64B600B32BF4C2A700DCCCF9 /* CryptoCollectionViewCell.swift in Sources */,
 				06A8C84A2B975685007E9018 /* Constants.swift in Sources */,
+				64B600A92BF4988F00DCCCF9 /* CALayer+.swift in Sources */,
 				64034E7A2BD8BAC7006AD57D /* ProfileViewController.swift in Sources */,
+				64B600C42BF5B44B00DCCCF9 /* TradeCollectionViewCell.swift in Sources */,
+				64B600C02BF5B43200DCCCF9 /* PortfolioCollectionViewCell.swift in Sources */,
 				06A8C8722B9798EE007E9018 /* MainAssembler.swift in Sources */,
 				06A8C87A2B979924007E9018 /* MainViewModel.swift in Sources */,
 				64B6009F2BF45F4A00DCCCF9 /* PresentLogin.swift in Sources */,
