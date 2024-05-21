@@ -30,9 +30,22 @@ final class MainViewController: UITabBarController, Bindable {
     // MARK: - Methods
     
     private func configView() {
-        view.tintColor = UIColor.white
-        tabBar.barTintColor = UIColor.red
-        tabBar.isTranslucent = false
+        
+        // Customize the background color
+               tabBar.barTintColor = UIColor.white
+               
+//               // Customize the shadow
+//               tabBar.layer.shadowColor = UIColor.black.cgColor
+//               tabBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+//               tabBar.layer.shadowRadius = 4
+//               tabBar.layer.shadowOpacity = 0.3
+//               tabBar.layer.masksToBounds = false
+//        tabBar.layer.shadowPath = UIBezierPath(rect: tabBar.bounds).cgPath
+               
+               // Customize item color
+               tabBar.tintColor = UIColor.blue
+               tabBar.unselectedItemTintColor = UIColor.gray
+
     }
     
     func bindViewModel() {

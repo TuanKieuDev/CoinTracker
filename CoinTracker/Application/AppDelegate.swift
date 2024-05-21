@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import FirebaseCore
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
+        FirebaseApp.configure()
         bindViewModel(window: window)
         return true
     }
