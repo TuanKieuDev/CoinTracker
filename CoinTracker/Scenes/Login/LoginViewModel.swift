@@ -7,6 +7,8 @@
 
 import RxSwift
 import RxCocoa
+import RxSwiftUtilities
+import FirebaseAuth
 
 struct LoginViewModel {
     let navigator: LoginNavigatorType
@@ -16,23 +18,33 @@ struct LoginViewModel {
 // MARK: - ViewModel
 extension LoginViewModel: ViewModel {
     struct Input {
+        let email: Driver<String>
+        let password: Driver<String>
         let normalLoginTrigger: Driver<Void>
     }
     
     struct Output {
+        let isLoading: Driver<Bool>
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
+        let activityIndicator = ActivityIndicator()
         
-        input.normalLoginTrigger
-//            .withLatestFrom(anime) { indexPath, result in
-//                return result[indexPath.row]
-//            }
-            .drive(onNext: {
-                self.navigator.toMain()
-            })
+        input.normalLoginTrigger.withLatestFrom(Driver.combineLatest(input.email, input.password))
+            .flatMapLatest { email, password in
+                return self.useCase.signInWithEmail(email: email, password: password)
+                    .trackActivity(activityIndicator)
+                    .do(onNext: { _ in
+                        self.navigator.toMain()
+                    })
+                    .asDriverOnErrorJustComplete()
+                
+            }
+            .drive()
             .disposed(by: disposeBag)
         
-        return Output()
+        return Output(
+            isLoading: activityIndicator.asDriver()
+        )
     }
 }

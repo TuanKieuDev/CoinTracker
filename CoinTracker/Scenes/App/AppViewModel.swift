@@ -25,12 +25,8 @@ extension AppViewModel: ViewModel {
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         input.load
-//            .flatMapLatest {
-//                self.useCase.addUserData()
-//                    .asDriverOnErrorJustComplete()
-//            }
             .drive(onNext:
-                    self.navigator.toMain
+                    self.navigator.toLogin
             )
             .disposed(by: disposeBag)
         
