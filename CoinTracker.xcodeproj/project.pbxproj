@@ -79,6 +79,7 @@
 		642DE7962BFAFB58001B866D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 642DE7952BFAFB58001B866D /* GoogleService-Info.plist */; };
 		642DE7992BFB25AD001B866D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 642DE7982BFB25AD001B866D /* GoogleSignIn */; };
 		642DE79B2BFB25AD001B866D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 642DE79A2BFB25AD001B866D /* GoogleSignInSwift */; };
+		642DE7A02BFDE91F001B866D /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DE79F2BFDE91F001B866D /* ObservableType.swift */; };
 		64B6009F2BF45F4A00DCCCF9 /* PresentLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6009E2BF45F4A00DCCCF9 /* PresentLogin.swift */; };
 		64B600A22BF4606E00DCCCF9 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */; };
 		64B600A42BF497F100DCCCF9 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B600A32BF497F100DCCCF9 /* TitleLabel.swift */; };
@@ -179,6 +180,7 @@
 		64034EAA2BD8F5E8006AD57D /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		64034EAD2BD90359006AD57D /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		642DE7952BFAFB58001B866D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		642DE79F2BFDE91F001B866D /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		64B6009E2BF45F4A00DCCCF9 /* PresentLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLogin.swift; sourceTree = "<group>"; };
 		64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		64B600A32BF497F100DCCCF9 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -560,6 +562,7 @@
 				64B600A12BF4606E00DCCCF9 /* UIViewController+.swift */,
 				64B600A82BF4988F00DCCCF9 /* CALayer+.swift */,
 				64B600AC2BF49D0D00DCCCF9 /* UIColor+.swift */,
+				642DE79F2BFDE91F001B866D /* ObservableType.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -796,6 +799,7 @@
 				64034E6D2BD8BA52006AD57D /* ExchangeAssembler.swift in Sources */,
 				06A8C8782B979915007E9018 /* MainViewController.swift in Sources */,
 				64B600AF2BF4A05D00DCCCF9 /* AppLabel.swift in Sources */,
+				642DE7A02BFDE91F001B866D /* ObservableType.swift in Sources */,
 				06A8C8802B98BF7E007E9018 /* HomeNavigator.swift in Sources */,
 				06A8C8682B9772E6007E9018 /* AppGateway.swift in Sources */,
 				64034E6E2BD8BA52006AD57D /* ExchangeNavigator.swift in Sources */,

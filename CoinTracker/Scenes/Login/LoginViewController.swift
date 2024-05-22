@@ -16,6 +16,8 @@ final class LoginViewController: UIViewController, Bindable {
     // MARK: - IBOutlets
     @IBOutlet private weak var normalLoginButton: AuthButton!
     @IBOutlet private weak var googleLoginButton: BorderedButton!
+    @IBOutlet private weak var emailTextField: AuthTextField!
+    @IBOutlet private weak var passwordTextField: AuthTextField!
     
     // MARK: - Properties
     private var normalLoginTrigger = PublishSubject<Void>()
@@ -33,17 +35,18 @@ final class LoginViewController: UIViewController, Bindable {
     // MARK: - Methods
     
     private func configView() {
-        normalLoginButton.rx.tap.subscribe(
-            onNext: {
-                self.normalLoginTrigger.onNext(())
-            }
-        )
-        .disposed(by: disposeBag)
+        
     }
     
     func bindViewModel() {
-        let input = LoginViewModel.Input(normalLoginTrigger: normalLoginTrigger.asDriver(onErrorJustReturn: ()))
+        let input = LoginViewModel.Input(
+            email: emailTextField.rx.text.orEmpty.asDriver(),
+            password: passwordTextField.rx.text.orEmpty.asDriver(),
+            normalLoginTrigger: normalLoginButton.rx.tap.asDriver()
+        )
+        
         let output = viewModel.transform(input, disposeBag: disposeBag)
+
     }
 }
 
