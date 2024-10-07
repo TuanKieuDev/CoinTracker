@@ -26,7 +26,8 @@ extension AppViewModel: ViewModel {
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         input.load
             .drive(onNext:
-                    self.navigator.toLogin
+//                    self.navigator.toLogin
+                   self.navigator.toMain
             )
             .disposed(by: disposeBag)
         
