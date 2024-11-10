@@ -30,22 +30,20 @@ final class MainViewController: UITabBarController, Bindable {
     // MARK: - Methods
     
     private func configView() {
+        tabBar.tintColor = UIColor.blue
+        tabBar.unselectedItemTintColor = UIColor.gray
         
-        // Customize the background color
-               tabBar.barTintColor = UIColor.white
-               
-//               // Customize the shadow
-//               tabBar.layer.shadowColor = UIColor.black.cgColor
-//               tabBar.layer.shadowOffset = CGSize(width: 0, height: 2)
-//               tabBar.layer.shadowRadius = 4
-//               tabBar.layer.shadowOpacity = 0.3
-//               tabBar.layer.masksToBounds = false
-//        tabBar.layer.shadowPath = UIBezierPath(rect: tabBar.bounds).cgPath
-               
-               // Customize item color
-               tabBar.tintColor = UIColor.blue
-               tabBar.unselectedItemTintColor = UIColor.gray
+        if #available(iOS 13.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.white  // Set desired background color
 
+            tabBar.standardAppearance = appearance
+            if #available(iOS 15.0, *) {
+                tabBar.scrollEdgeAppearance = appearance  // Ensure the appearance is applied when scrolled
+            }
+        }
+        
     }
     
     func bindViewModel() {

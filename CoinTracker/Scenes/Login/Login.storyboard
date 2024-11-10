@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,7 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saC-LG-XZq" customClass="AuthTextField" customModule="CoinTracker" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saC-LG-XZq" customClass="SecureAuthTextField" customModule="CoinTracker" customModuleProvider="target">
                                 <rect key="frame" x="16" y="213" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -35,30 +35,45 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-ew-oi8" customClass="AuthButton" customModule="CoinTracker" customModuleProvider="target">
-                                <rect key="frame" x="16" y="279" width="361" height="40"/>
+                                <rect key="frame" x="16" y="279" width="361" height="50"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Mbs-gy-r0p"/>
+                                    <constraint firstAttribute="height" constant="50" id="Mbs-gy-r0p"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93U-pI-yqd">
-                                <rect key="frame" x="184.66666666666666" y="343" width="23.666666666666657" height="21"/>
+                                <rect key="frame" x="184.66666666666666" y="353" width="23.666666666666657" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16h-cd-e18" customClass="BorderedButton" customModule="CoinTracker" customModuleProvider="target">
-                                <rect key="frame" x="16" y="388" width="361" height="40"/>
+                                <rect key="frame" x="16" y="397.33333333333331" width="361" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="lSc-z1-7GU"/>
+                                    <constraint firstAttribute="height" constant="50" id="lSc-z1-7GU"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sr-IA-124">
+                                <rect key="frame" x="16" y="747" width="361" height="39"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Don't have an account? Register"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLy-xG-Jsg" customClass="BorderedButton" customModule="CoinTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="463.33333333333331" width="361" height="49.999999999999943"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zHn-gO-O06"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Facebook"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -70,17 +85,23 @@
                             <constraint firstItem="93U-pI-yqd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="AHr-ra-aLZ"/>
                             <constraint firstItem="saC-LG-XZq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="E4G-US-jGm"/>
                             <constraint firstItem="saC-LG-XZq" firstAttribute="top" secondItem="Mk2-ED-E7d" secondAttribute="bottom" constant="24" id="H2t-Eb-g8s"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8sr-IA-124" secondAttribute="bottom" constant="32" id="JBE-GB-6R1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mk2-ED-E7d" secondAttribute="trailing" constant="16" id="OCO-kj-cUO"/>
                             <constraint firstItem="ygJ-ew-oi8" firstAttribute="top" secondItem="saC-LG-XZq" secondAttribute="bottom" constant="32" id="RJg-2R-Wf8"/>
                             <constraint firstItem="Mk2-ED-E7d" firstAttribute="top" secondItem="wir-U5-fkO" secondAttribute="bottom" constant="32" id="avP-iu-tna"/>
                             <constraint firstItem="Mk2-ED-E7d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="bld-Nx-7LH"/>
                             <constraint firstItem="16h-cd-e18" firstAttribute="top" secondItem="93U-pI-yqd" secondAttribute="bottom" constant="24" id="cXQ-bO-KjV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8sr-IA-124" secondAttribute="trailing" constant="16" id="ccC-Zd-55j"/>
                             <constraint firstItem="93U-pI-yqd" firstAttribute="top" secondItem="ygJ-ew-oi8" secondAttribute="bottom" constant="24" id="eia-bd-eSs"/>
                             <constraint firstItem="wir-U5-fkO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gNv-f1-dxk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xLy-xG-Jsg" secondAttribute="trailing" constant="16" id="ghS-Rf-ExC"/>
                             <constraint firstItem="16h-cd-e18" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hRR-tN-A7S"/>
+                            <constraint firstItem="8sr-IA-124" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="lji-8z-cVU"/>
+                            <constraint firstItem="xLy-xG-Jsg" firstAttribute="top" secondItem="16h-cd-e18" secondAttribute="bottom" constant="16" id="mce-f7-wLK"/>
                             <constraint firstItem="wir-U5-fkO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="r70-hR-few"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="16h-cd-e18" secondAttribute="trailing" constant="16" id="sp3-ng-Y7B"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wir-U5-fkO" secondAttribute="trailing" constant="20" id="tha-9L-2Bw"/>
+                            <constraint firstItem="xLy-xG-Jsg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="zer-GB-vZf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -88,6 +109,7 @@
                         <outlet property="googleLoginButton" destination="16h-cd-e18" id="dTW-Vh-wGI"/>
                         <outlet property="normalLoginButton" destination="ygJ-ew-oi8" id="6z8-U3-Zn3"/>
                         <outlet property="passwordTextField" destination="saC-LG-XZq" id="7iP-wd-Itg"/>
+                        <outlet property="registerButton" destination="8sr-IA-124" id="IgG-8h-qrW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,7 +119,7 @@
     </scenes>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

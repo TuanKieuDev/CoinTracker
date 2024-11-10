@@ -1,21 +1,119 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TradeCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TradeCollectionViewCell" customModule="CoinTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="292" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-1B-qeY">
+                        <rect key="frame" x="16" y="16" width="260" height="68"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guk-nG-aoM">
+                                <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="68"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.arrow.circlepath" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9ol-8B-UWM">
+                                        <rect key="frame" x="0.0" y="2.3333333333333304" width="66.666666666666671" height="63.666666666666643"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9ol-8B-UWM" secondAttribute="height" multiplier="1:1" id="nPa-4W-tcd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9ol-8B-UWM" firstAttribute="leading" secondItem="guk-nG-aoM" secondAttribute="leading" id="6HR-vG-snz"/>
+                                    <constraint firstItem="9ol-8B-UWM" firstAttribute="centerY" secondItem="guk-nG-aoM" secondAttribute="centerY" id="d40-Sg-bdc"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ol-8B-UWM" secondAttribute="trailing" constant="20" id="pRs-JP-Wdm"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-G5-t82">
+                                <rect key="frame" x="86.666666666666657" y="0.0" width="86.666666666666657" height="68"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24A-Mc-s6U">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="17"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLY-0F-Xrq" customClass="AppLabel" customModule="CoinTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17" width="45" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub-name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP7-7B-txM" customClass="AppLabel" customModule="CoinTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="34" width="79.666666666666671" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjx-Vh-Xji">
+                                        <rect key="frame" x="0.0" y="51" width="86.666666666666671" height="17"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-dZ-eFK">
+                                <rect key="frame" x="173.33333333333334" y="0.0" width="86.666666666666657" height="68"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fn8-Kd-lBY">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="17"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-gs-zNR" customClass="AppLabel" customModule="CoinTracker" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="17" width="38.666666666666657" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-lA-9CQ">
+                                        <rect key="frame" x="62.666666666666657" y="34" width="24" height="17"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFE-Ez-VHg">
+                                        <rect key="frame" x="0.0" y="51" width="86.666666666666671" height="17"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YZz-1B-qeY" secondAttribute="bottom" constant="16" id="4PI-gD-tls"/>
+                <constraint firstItem="YZz-1B-qeY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="7cj-au-WV7"/>
+                <constraint firstItem="YZz-1B-qeY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="82X-We-07z"/>
+                <constraint firstAttribute="trailing" secondItem="YZz-1B-qeY" secondAttribute="trailing" constant="16" id="G4H-ad-R9n"/>
+            </constraints>
+            <size key="customSize" width="292" height="100"/>
+            <connections>
+                <outlet property="changeView" destination="rQq-lA-9CQ" id="1KM-nC-45t"/>
+                <outlet property="coinImageView" destination="9ol-8B-UWM" id="cuz-Lj-SlT"/>
+                <outlet property="nameLabel" destination="dLY-0F-Xrq" id="oCr-GZ-Yg3"/>
+                <outlet property="priceLabel" destination="CNV-gs-zNR" id="1tL-6s-lpL"/>
+                <outlet property="suffixLabel" destination="rP7-7B-txM" id="nhB-rU-9dE"/>
+            </connections>
+            <point key="canvasLocation" x="311.4503816793893" y="6.3380281690140849"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="bitcoinsign.arrow.circlepath" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

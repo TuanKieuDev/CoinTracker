@@ -17,10 +17,12 @@ final class LoginViewController: UIViewController, Bindable {
     @IBOutlet private weak var normalLoginButton: AuthButton!
     @IBOutlet private weak var googleLoginButton: BorderedButton!
     @IBOutlet private weak var emailTextField: AuthTextField!
-    @IBOutlet private weak var passwordTextField: AuthTextField!
+    @IBOutlet private weak var passwordTextField: SecureAuthTextField!
+    @IBOutlet private weak var registerButton: UIButton!
     
     // MARK: - Properties
     private var normalLoginTrigger = PublishSubject<Void>()
+    private var googleLoginTrigger = PublishSubject<Void>()
     
     var viewModel: LoginViewModel!
     var disposeBag = DisposeBag()
@@ -35,17 +37,26 @@ final class LoginViewController: UIViewController, Bindable {
     // MARK: - Methods
     
     private func configView() {
-        
+        registerButton.rx.tap.subscribe(onNext: {
+            print("cs")
+        }).disposed(by: disposeBag)
     }
     
     func bindViewModel() {
         let input = LoginViewModel.Input(
             email: emailTextField.rx.text.orEmpty.asDriver(),
             password: passwordTextField.rx.text.orEmpty.asDriver(),
-            normalLoginTrigger: normalLoginButton.rx.tap.asDriver()
+            normalLoginTrigger: normalLoginButton.rx.tap.asDriver(),
+            googleLoginTrigger: googleLoginButton.rx.tap.asDriver()
         )
         
         let output = viewModel.transform(input, disposeBag: disposeBag)
+        
+//        output.loginSuccess
+//            .drive(onNext: { [weak self] in
+//                self?.viewModel.navigator.toMain()
+//            })
+//            .disposed(by: disposeBag)
 
     }
 }

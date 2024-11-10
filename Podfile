@@ -33,6 +33,7 @@ target 'CoinTracker' do
     
     # Others
     pod 'Charts', '4.1.0'
+    pod 'SDWebImage', '~> 5.0'
 
 end
 

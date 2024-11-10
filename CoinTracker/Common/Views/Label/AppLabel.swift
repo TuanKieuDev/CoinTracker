@@ -22,7 +22,6 @@ class AppLabel: UILabel {
     
     private func setup() {
         self.font = UIFont(name: "Avenir", size: 14)
-        self.textAlignment = .center
         self.textColor = UIColor.black
     }
 }

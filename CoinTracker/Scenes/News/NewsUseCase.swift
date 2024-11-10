@@ -8,9 +8,11 @@
 import RxSwift
 
 protocol NewsUseCaseType {
-    
+    func getNews() -> Observable<[News]>
 }
 
 struct NewsUseCase: NewsUseCaseType {
-    
+    func getNews() -> Observable<[News]> {
+        return NewsRepositoryImpl().getNews(input: NewsRequest())
+    }
 }

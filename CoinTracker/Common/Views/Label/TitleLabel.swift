@@ -22,9 +22,7 @@ class TitleLabel: UILabel {
         
         private func setup() {
             // Customize label appearance here
-//            self.textColor = UIColor.gray
-//            self.font = UIFont(name: "Avenir-Bold", size: 30)
-            self.textAlignment = .center
-            // Add any other customization you need
+            self.textColor = UIColor.black
+            self.font = UIFont(name: "Avenir-Bold", size: 56)
         }
 }

@@ -1156,6 +1156,7 @@ DEPENDENCIES:
   - RxGesture
   - RxSwift (~> 5.1.1)
   - RxSwiftUtilities (~> 2.2.0)
+  - SDWebImage (~> 5.0)
   - SDWebImage (~> 5.18.7)
   - SwiftLint (~> 0.46.0)
   - Then (~> 3.0.0)
@@ -1245,6 +1246,6 @@ SPEC CHECKSUMS:
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 1591f502cdfab3bb9944546c760b9ec6f2ae310e
+PODFILE CHECKSUM: f8281227bf0896891b88db0c2016f468198713c5
 
 COCOAPODS: 1.15.2

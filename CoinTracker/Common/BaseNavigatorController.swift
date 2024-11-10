@@ -36,6 +36,5 @@ extension BaseNavigationController: UINavigationControllerDelegate {
                               willShow viewController: UIViewController,
                               animated: Bool) {
         viewController.extendedLayoutIncludesOpaqueBars = true
-//        viewController.removeBackButtonTitle()
     }
 }

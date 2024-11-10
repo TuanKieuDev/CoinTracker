@@ -7,6 +7,7 @@
 
 import RxSwift
 import RxCocoa
+import RxSwiftUtilities
 
 struct NewsViewModel {
     let navigator: NewsNavigatorType
@@ -16,15 +17,24 @@ struct NewsViewModel {
 // MARK: - ViewModel
 extension NewsViewModel: ViewModel {
     struct Input {
-        
+        let load: Driver<Void>
     }
     
     struct Output {
-        
+        let news: Driver<[News]>
+        let isLoading: Driver<Bool>
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
-        let output = Output()
-        return output
+        let activityIndicator = ActivityIndicator()
+        
+        let news = input.load
+            .flatMapLatest { _ in
+                return self.useCase.getNews()
+                    .trackActivity(activityIndicator)
+                    .asDriver(onErrorJustReturn: [])
+            }
+
+        return Output(news: news, isLoading: activityIndicator.asDriver())
     }
 }

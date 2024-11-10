@@ -20,6 +20,8 @@ final class HomeViewController: UIViewController, Bindable {
     
     var viewModel: HomeViewModel!
     var disposeBag = DisposeBag()
+    var coinsList = [Coin]()
+    let sections = Constants.Home.Section.allCases
     
     // MARK: - Life Cycle
     
@@ -34,17 +36,23 @@ final class HomeViewController: UIViewController, Bindable {
         collectionView.do {
             $0.register(cellType: PortfolioCollectionViewCell.self)
             $0.register(cellType: TradeCollectionViewCell.self)
-        }
-
-        collectionView.do {
             $0.delegate = self
             $0.dataSource = self
         }
     }
     
     func bindViewModel() {
-        let input = HomeViewModel.Input()
+        let input = HomeViewModel.Input(load: Driver.just(()))
         let output = viewModel.transform(input, disposeBag: disposeBag)
+        
+        output.coins
+            .asDriver()
+            .drive(onNext: { [unowned self] coins in
+                self.coinsList = coins
+                print("AA_\(coinsList)")
+                self.collectionView.reloadData()
+            })
+            .disposed(by: disposeBag)
     }
 }
 

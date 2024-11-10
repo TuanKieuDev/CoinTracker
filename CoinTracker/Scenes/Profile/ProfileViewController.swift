@@ -14,11 +14,10 @@ import Then
 final class ProfileViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var logoutButton: AuthButton!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Properties
-    private var logoutTrigger = PublishSubject<Void>()
-    
+    var logoutTrigger = PublishSubject<Void>()
     var viewModel: ProfileViewModel!
     var disposeBag = DisposeBag()
     
@@ -27,22 +26,50 @@ final class ProfileViewController: UIViewController, Bindable {
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+        bindViewModel()
     }
     
     // MARK: - Methods
     
     private func configView() {
-        logoutButton.rx.tap.subscribe(
-            onNext: {
-                self.logoutTrigger.onNext(())
-            }
-        )
-        .disposed(by: disposeBag)
+        tableView.do {
+            $0.showsVerticalScrollIndicator = false
+            $0.delegate = self
+            $0.dataSource = self
+            $0.register(cellType: GeneralInformationTableViewCell.self)
+            $0.register(cellType: CategoryInformationTableViewCell.self)
+            $0.register(cellType: LogoutButtonTableViewCell.self)
+        }
+//        logoutButton.rx.tap.subscribe(
+//            onNext: {
+//                self.logoutTrigger.onNext(())
+//            }
+//        )
+//        .disposed(by: disposeBag)
+        
+//        logoutButton.rx.tap
+//                   .bind(to: logoutTrigger)
+//                   .disposed(by: disposeBag)
     }
     
     func bindViewModel() {
         let input = ProfileViewModel.Input(logoutTrigger: logoutTrigger.asDriver(onErrorJustReturn: ()))
+
         let output = viewModel.transform(input, disposeBag: disposeBag)
+        
+        output.isLoggingOut
+            .drive(onNext: { isLoading in
+                if isLoading {
+                    print("isLogging")
+                } else {
+                    print("login out")
+                }
+            })
+            .disposed(by: disposeBag)
+//        
+//        output.logoutSuccess
+//            .drive()
+//            .disposed(by: disposeBag)
     }
 }
 

@@ -8,9 +8,11 @@
 import RxSwift
 
 protocol HomeUseCaseType {
-    
+    func getCoins() -> Observable<[Coin]>
 }
 
 struct HomeUseCase: HomeUseCaseType {
-    
+    func getCoins() -> Observable<[Coin]> {
+        return CoinsRepositoryImpl().getCoins(input: CoinsRequest())
+    }
 }

@@ -1,0 +1,31 @@
+//
+//  ViewController+Rx.swift
+//  CoinTracker
+//
+//  Created by Kieu Anh Tuan on 17/10/2024.
+//
+
+import Foundation
+import RxSwift
+import RxCocoa
+import MBProgressHUD
+
+extension Reactive where Base: UIViewController {
+
+    var error: Binder<Error> {
+        return Binder(base) { viewController, error in
+            viewController.showError(message: error.localizedDescription)
+        }
+    }
+
+    var isLoading: Binder<Bool> {
+        return Binder(base) { viewController, isLoading in
+            if isLoading {
+                let hud = MBProgressHUD.showAdded(to: viewController.view, animated: true)
+                hud.offset.y = -30
+            } else {
+                MBProgressHUD.hide(for: viewController.view, animated: true)
+            }
+        }
+    }
+}

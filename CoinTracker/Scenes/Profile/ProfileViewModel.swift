@@ -7,6 +7,7 @@
 
 import RxSwift
 import RxCocoa
+import RxSwiftUtilities
 
 struct ProfileViewModel {
     let navigator: ProfileNavigatorType
@@ -20,18 +21,28 @@ extension ProfileViewModel: ViewModel {
     }
     
     struct Output {
-        
+        let isLoggingOut: Driver<Bool>
+//        let logoutSuccess: Driver<Void>
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
+        let activityIndicator = ActivityIndicator()
         
         input.logoutTrigger
-
-            .drive(onNext: {
-                self.navigator.toLogin()
+            .asObservable()
+            .flatMapLatest {
+                self.useCase.signOut()
+                    .trackActivity(activityIndicator)  // Track loading state
+                    .asDriverOnErrorJustComplete()
+            }
+            .subscribe(onNext: { _ in
+                print("AA_toLogin")
+//                self.navigator.toLogin()  // Navigate to login after successful logout
             })
             .disposed(by: disposeBag)
         
-        return Output()
+        return Output(
+            isLoggingOut: activityIndicator.asDriver()
+        )
     }
 }

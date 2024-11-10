@@ -24,7 +24,6 @@ class ActionLabel: UILabel {
     
     private func setup() {
         self.font = UIFont(name: "Avenir", size: 20)
-        self.textAlignment = .center
         self.textColor = UIColor.blue
     }
     
@@ -38,4 +37,3 @@ class ActionLabel: UILabel {
         tapAction?()
     }
 }
-

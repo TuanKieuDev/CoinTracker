@@ -18,4 +18,9 @@ class AuthTextField: UITextField {
 //            self.layer.borderColor = UIColor.gray.cgColor
 //            self.layer.borderWidth = 1.0
         }
+    
+    override var intrinsicContentSize: CGSize {
+        // Customize the height, keeping the width as it is
+        return CGSize(width: super.intrinsicContentSize.width, height: 50)  // 50 is your custom height
+    }
 }
